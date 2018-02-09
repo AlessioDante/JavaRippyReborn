@@ -6,24 +6,27 @@ public class main {
 	///+-+-+-+-+-+-+-+-+-+-+-+-
 	// Ale SandBox 
 	///+-+-+-+-+-+-+-+-+-+-+-+-
-	
-	//+-+-+- Variabili -+-+-+//
-	String[] sloganList = {"Ps Mangio biscotti gtfo","grrr puzzi", "1,2,3 cacca in culo a te", "Polep Fresser", "Dont mess with cnabo or get the stabbo", " hello there"};	
-	
 	public class Bp_Cnaby {
-		private String nome;
-		
+	//+-+-+- Variabili
+		private String m_nome;
+		private String[] m_sloganList = {
+				"Ps Mangio biscotti gtfo",
+				"grrr puzzi", 
+				"1,2,3 cacca in culo a te", 
+				"Polep Fresser", 
+				"Dont mess with cnabo or get the stabbo", 
+				" hello there"};	
+	//+-+-+- Eventi 	
 		Bp_Cnaby saySomething(){
 			Random rand = new Random();
-			System.out.println("cnaby dice : " + sloganList[rand.nextInt(5)]);
+			System.out.println("cnaby dice : " + m_sloganList[rand.nextInt(5)]);
 			return this;
-		}
-		
+		}		
 		public void setNome(String nnome) {
-			nome = nnome;
+			m_nome = nnome;
 		}
 		public String getNome() {
-			return nome;
+			return m_nome;
 		}
 	}
 	
